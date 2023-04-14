@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/RatingRadioGroup"
+        android:layout_width="408dp"
+        android:layout_height="541dp"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/excellentRB"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:text="Excellent" />
+
+        <RadioButton
+            android:id="@+id/vgoodRB"
+            android:layout_width="172dp"
+            android:layout_height="63dp"
+            android:text="Very Good" />
+
+        <RadioButton
+            android:id="@+id/goodRB"
+            android:layout_width="175dp"
+            android:layout_height="66dp"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/satisfactoryRB"
+            android:layout_width="172dp"
+            android:layout_height="62dp"
+            android:text="Satisfactory" />
+
+        <RadioButton
+            android:id="@+id/poorRB"
+            android:layout_width="178dp"
+            android:layout_height="64dp"
+            android:text="Poor" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rate our app!"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DismissEconomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

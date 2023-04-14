@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/FirstClassImage"
+        android:layout_width="409dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/best_airlines_for_flying_first_class" />
+
+    <TextView
+        android:id="@+id/FirstClassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Class Flight Details:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstClassImage" />
+
+    <TextView
+        android:id="@+id/PriorityTV"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="- Priority check-in, security and boarding. Seats towards the front of the plane so you can deplane before other cabins."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstClassTV" />
+
+    <TextView
+        android:id="@+id/SeatsTV"
+        android:layout_width="334dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="- Premium seats, including more space and lie-flat beds."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PriorityTV" />
+
+    <TextView
+        android:id="@+id/LoungeTV"
+        android:layout_width="333dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="- Lounge access."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeatsTV" />
+
+    <TextView
+        android:id="@+id/MealsTV"
+        android:layout_width="343dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="8dp"
+        android:text="- Enhanced food options, starters include smoked salmon or grilled prawns. The main event features steaks cooked to order or a fish option. Meals end with a traditional dessert such as a flourless chocolate cake or a cheese platter."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoungeTV" />
+
+    <TextView
+        android:id="@+id/LuggageTV"
+        android:layout_width="337dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="13dp"
+        android:text="- Dedicated overhead space for your carry-on luggage."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MealsTV" />
+
+    <Button
+        android:id="@+id/DismissFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Dismiss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LuggageTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

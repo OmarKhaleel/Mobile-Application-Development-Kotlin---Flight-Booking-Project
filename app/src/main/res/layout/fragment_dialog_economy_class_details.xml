@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/DismissEconomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Dismiss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoungeTV" />
+
+    <ImageView
+        android:id="@+id/EconomyClassImage"
+        android:layout_width="409dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_ddcbbae_9a89_3f1e_93d1_5ef178398945" />
+
+    <TextView
+        android:id="@+id/EconomyClassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Economy Class Flight Details:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EconomyClassImage" />
+
+    <TextView
+        android:id="@+id/PriorityTV"
+        android:layout_width="345dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="27dp"
+        android:text="- Economy class seats recline and have a fold-down table."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EconomyClassTV" />
+
+    <TextView
+        android:id="@+id/SeatsTV"
+        android:layout_width="340dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:text="- A pocket on the seat in front will contain an airsickness bag, an inflight magazine, a duty-free catalogue, and a safety and evacuation card."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PriorityTV" />
+
+    <TextView
+        android:id="@+id/LoungeTV"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="- The meals include pasta, soups, noodles, meat, ham, rice, vegetables."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeatsTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
