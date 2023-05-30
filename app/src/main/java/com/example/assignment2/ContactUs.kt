@@ -6,34 +6,17 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
-
-    lateinit var handler: SQLiteHelper
+class ContactUs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.contactus)
 
-        handler = SQLiteHelper(this)
-        val emailED: EditText = findViewById(R.id.EmailED)
-        val passwordED: EditText = findViewById(R.id.PasswordED)
-        val btnSignUp: Button = findViewById(R.id.SignUpBT)
-        val btnLogIn: Button = findViewById(R.id.LoginBT)
+        val btnBooking: Button = findViewById(R.id.GoToBookingBT)
 
-        btnLogIn.setOnClickListener {
-            if (handler.userRegistered(emailED.text.toString(), passwordED.text.toString())) {
-                val intent3 = Intent(this, Booking::class.java)
-                startActivity(intent3)
-            } else {
-                Toast.makeText(this, "Email or password is incorrect", Toast.LENGTH_SHORT).show()
-            }
-        }
-
-        btnSignUp.setOnClickListener {
-            val intent4 = Intent(this, SignUp::class.java)
-            startActivity(intent4)
+        btnBooking.setOnClickListener {
+            val intent3 = Intent(this, Booking::class.java)
+            startActivity(intent3)
         }
     }
 

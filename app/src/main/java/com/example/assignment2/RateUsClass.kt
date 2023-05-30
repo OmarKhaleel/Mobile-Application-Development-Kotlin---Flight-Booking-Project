@@ -3,7 +3,6 @@ package com.example.assignment2
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
@@ -17,9 +16,9 @@ class RateUsClass: DialogFragment(R.layout.fragment_dialog_rate_us) {
             dismiss()
         }
         submitbt.setOnClickListener {
-            val selectedOption: Int = radioGroup.checkedRadioButtonId
-            val radioButton = view.findViewById<RadioButton>(selectedOption)
-            Toast.makeText(context,radioButton.text,Toast.LENGTH_SHORT).show()
+//            val selectedOption: Int = radioGroup.checkedRadioButtonId
+//            val radioButton = view.findViewById<RadioButton>(selectedOption)
+            Toast.makeText(context,"Feedback Received.",Toast.LENGTH_SHORT).show()
             dismiss()
         }
         super.onViewCreated(view, savedInstanceState)

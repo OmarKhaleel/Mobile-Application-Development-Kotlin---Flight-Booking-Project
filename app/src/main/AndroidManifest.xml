@@ -21,6 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Booking" />
+        <activity android:name=".Location" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".SignUp" />
     </application>
 
 </manifest>

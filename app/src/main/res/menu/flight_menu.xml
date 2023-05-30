@@ -8,11 +8,6 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/Booking"
-        android:title="Booking"
-        app:showAsAction="never" />
-
-    <item
         android:id="@+id/FirstClassDetails"
         android:title="First Class Details"
         app:showAsAction="never" />
@@ -20,5 +15,15 @@
     <item
         android:id="@+id/EconomyClassDetails"
         android:title="Economy class Details"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Location"
+        android:title="Our Location"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ContactUs"
+        android:title="Contact Us"
         app:showAsAction="never" />
 </menu>
